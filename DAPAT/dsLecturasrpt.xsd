@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLecturasrpt" targetNamespace="http://tempuri.org/dsLecturasrpt.xsd" xmlns:mstns="http://tempuri.org/dsLecturasrpt.xsd" xmlns="http://tempuri.org/dsLecturasrpt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="csLecturas" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="csLecturas (MySettings)" PropertyReference="ApplicationSettings.DAPAT.My.MySettings.GlobalReference.Default.csLecturas" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="uvw_TLQ_LecturasTableAdapter" GeneratorDataComponentClassName="uvw_TLQ_LecturasTableAdapter" Name="uvw_TLQ_Lecturas" UserDataComponentName="uvw_TLQ_LecturasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="csLecturas (MySettings)" DbObjectName="Simapa.dbo.uvw_TLQ_Lecturas" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Año, Mes, Cuenta, Ruta, Lecturista, Medidor, Aplicado, TipoLectura, NOMBRE, CCALNOMBRE, EXTERIOR, INTERIOR, CCOLNOMBRE, CCONSERMED, VigenciaAnterior, MesAnterior, LecturaAnterior, LecturaActual FROM dbo.uvw_TLQ_Lecturas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Año" DataSetColumn="Año" />
+              <Mapping SourceColumn="Mes" DataSetColumn="Mes" />
+              <Mapping SourceColumn="Cuenta" DataSetColumn="Cuenta" />
+              <Mapping SourceColumn="Ruta" DataSetColumn="Ruta" />
+              <Mapping SourceColumn="Lecturista" DataSetColumn="Lecturista" />
+              <Mapping SourceColumn="Medidor" DataSetColumn="Medidor" />
+              <Mapping SourceColumn="Aplicado" DataSetColumn="Aplicado" />
+              <Mapping SourceColumn="TipoLectura" DataSetColumn="TipoLectura" />
+              <Mapping SourceColumn="NOMBRE" DataSetColumn="NOMBRE" />
+              <Mapping SourceColumn="CCALNOMBRE" DataSetColumn="CCALNOMBRE" />
+              <Mapping SourceColumn="EXTERIOR" DataSetColumn="EXTERIOR" />
+              <Mapping SourceColumn="INTERIOR" DataSetColumn="INTERIOR" />
+              <Mapping SourceColumn="CCOLNOMBRE" DataSetColumn="CCOLNOMBRE" />
+              <Mapping SourceColumn="CCONSERMED" DataSetColumn="CCONSERMED" />
+              <Mapping SourceColumn="VigenciaAnterior" DataSetColumn="VigenciaAnterior" />
+              <Mapping SourceColumn="MesAnterior" DataSetColumn="MesAnterior" />
+              <Mapping SourceColumn="LecturaAnterior" DataSetColumn="LecturaAnterior" />
+              <Mapping SourceColumn="LecturaActual" DataSetColumn="LecturaActual" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLecturasrpt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsLecturasrpt" msprop:Generator_UserDSName="dsLecturasrpt">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="uvw_TLQ_Lecturas" msprop:Generator_TableClassName="uvw_TLQ_LecturasDataTable" msprop:Generator_TableVarName="tableuvw_TLQ_Lecturas" msprop:Generator_TablePropName="uvw_TLQ_Lecturas" msprop:Generator_RowDeletingName="uvw_TLQ_LecturasRowDeleting" msprop:Generator_RowChangingName="uvw_TLQ_LecturasRowChanging" msprop:Generator_RowEvHandlerName="uvw_TLQ_LecturasRowChangeEventHandler" msprop:Generator_RowDeletedName="uvw_TLQ_LecturasRowDeleted" msprop:Generator_UserTableName="uvw_TLQ_Lecturas" msprop:Generator_RowChangedName="uvw_TLQ_LecturasRowChanged" msprop:Generator_RowEvArgName="uvw_TLQ_LecturasRowChangeEvent" msprop:Generator_RowClassName="uvw_TLQ_LecturasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Año" msprop:Generator_ColumnVarNameInTable="columnAño" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_UserColumnName="Año" type="xs:short" />
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cuenta" msprop:Generator_ColumnVarNameInTable="columnCuenta" msprop:Generator_ColumnPropNameInRow="Cuenta" msprop:Generator_ColumnPropNameInTable="CuentaColumn" msprop:Generator_UserColumnName="Cuenta">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ruta" msprop:Generator_ColumnVarNameInTable="columnRuta" msprop:Generator_ColumnPropNameInRow="Ruta" msprop:Generator_ColumnPropNameInTable="RutaColumn" msprop:Generator_UserColumnName="Ruta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lecturista" msprop:Generator_ColumnVarNameInTable="columnLecturista" msprop:Generator_ColumnPropNameInRow="Lecturista" msprop:Generator_ColumnPropNameInTable="LecturistaColumn" msprop:Generator_UserColumnName="Lecturista" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Medidor" msprop:Generator_ColumnVarNameInTable="columnMedidor" msprop:Generator_ColumnPropNameInRow="Medidor" msprop:Generator_ColumnPropNameInTable="MedidorColumn" msprop:Generator_UserColumnName="Medidor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aplicado" msprop:Generator_ColumnVarNameInTable="columnAplicado" msprop:Generator_ColumnPropNameInRow="Aplicado" msprop:Generator_ColumnPropNameInTable="AplicadoColumn" msprop:Generator_UserColumnName="Aplicado" type="xs:boolean" />
+              <xs:element name="TipoLectura" msprop:Generator_ColumnVarNameInTable="columnTipoLectura" msprop:Generator_ColumnPropNameInRow="TipoLectura" msprop:Generator_ColumnPropNameInTable="TipoLecturaColumn" msprop:Generator_UserColumnName="TipoLectura" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMBRE" msprop:Generator_ColumnVarNameInTable="columnNOMBRE" msprop:Generator_ColumnPropNameInRow="NOMBRE" msprop:Generator_ColumnPropNameInTable="NOMBREColumn" msprop:Generator_UserColumnName="NOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CCALNOMBRE" msprop:Generator_ColumnVarNameInTable="columnCCALNOMBRE" msprop:Generator_ColumnPropNameInRow="CCALNOMBRE" msprop:Generator_ColumnPropNameInTable="CCALNOMBREColumn" msprop:Generator_UserColumnName="CCALNOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EXTERIOR" msprop:Generator_ColumnVarNameInTable="columnEXTERIOR" msprop:Generator_ColumnPropNameInRow="EXTERIOR" msprop:Generator_ColumnPropNameInTable="EXTERIORColumn" msprop:Generator_UserColumnName="EXTERIOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INTERIOR" msprop:Generator_ColumnVarNameInTable="columnINTERIOR" msprop:Generator_ColumnPropNameInRow="INTERIOR" msprop:Generator_ColumnPropNameInTable="INTERIORColumn" msprop:Generator_UserColumnName="INTERIOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CCOLNOMBRE" msprop:Generator_ColumnVarNameInTable="columnCCOLNOMBRE" msprop:Generator_ColumnPropNameInRow="CCOLNOMBRE" msprop:Generator_ColumnPropNameInTable="CCOLNOMBREColumn" msprop:Generator_UserColumnName="CCOLNOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CCONSERMED" msprop:Generator_ColumnVarNameInTable="columnCCONSERMED" msprop:Generator_ColumnPropNameInRow="CCONSERMED" msprop:Generator_ColumnPropNameInTable="CCONSERMEDColumn" msprop:Generator_UserColumnName="CCONSERMED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VigenciaAnterior" msprop:Generator_ColumnVarNameInTable="columnVigenciaAnterior" msprop:Generator_ColumnPropNameInRow="VigenciaAnterior" msprop:Generator_ColumnPropNameInTable="VigenciaAnteriorColumn" msprop:Generator_UserColumnName="VigenciaAnterior" type="xs:short" minOccurs="0" />
+              <xs:element name="MesAnterior" msprop:Generator_ColumnVarNameInTable="columnMesAnterior" msprop:Generator_ColumnPropNameInRow="MesAnterior" msprop:Generator_ColumnPropNameInTable="MesAnteriorColumn" msprop:Generator_UserColumnName="MesAnterior" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LecturaAnterior" msprop:Generator_ColumnVarNameInTable="columnLecturaAnterior" msprop:Generator_ColumnPropNameInRow="LecturaAnterior" msprop:Generator_ColumnPropNameInTable="LecturaAnteriorColumn" msprop:Generator_UserColumnName="LecturaAnterior" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LecturaActual" msprop:Generator_ColumnVarNameInTable="columnLecturaActual" msprop:Generator_ColumnPropNameInRow="LecturaActual" msprop:Generator_ColumnPropNameInTable="LecturaActualColumn" msprop:Generator_UserColumnName="LecturaActual" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
